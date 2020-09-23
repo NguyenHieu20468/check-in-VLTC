@@ -30,8 +30,8 @@ app.use(session({
     store: new (require('express-sessions'))({
         storage: 'mongodb',
         instance: mongoose, // optional
-        url: mongodb+srv://hieunguyen:hieu_199_jul@check-in.rbrng.mongodb.net/Check-in?retryWrites=true&w=majority
-        port: 27017, // optional
+        url: mongodb+srv://hieunguyen:hieu_199_jul@check-in.rbrng.mongodb.net/Check-in?retryWrites=true&w=majority,
+        port: 3000, // optional
 
     }),
     resave: true,
