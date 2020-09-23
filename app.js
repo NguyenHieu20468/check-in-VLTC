@@ -30,12 +30,9 @@ app.use(session({
     store: new (require('express-sessions'))({
         storage: 'mongodb',
         instance: mongoose, // optional
-        host: 'localhost', // optional
+        url: mongodb+srv://hieunguyen:hieu_199_jul@check-in.rbrng.mongodb.net/Check-in?retryWrites=true&w=majority
         port: 27017, // optional
-        bindIp: 0.0.0.0,
-        db: 'diemdanh-app', // optional
-        collection: 'sessions', // optional
-        expire: 86400 // optional
+
     }),
     resave: true,
     saveUninitialized: true,
