@@ -32,6 +32,7 @@ app.use(session({
         instance: mongoose, // optional
         host: 'localhost', // optional
         port: 27017, // optional
+        bindIp: 0.0.0.0,
         db: 'diemdanh-app', // optional
         collection: 'sessions', // optional
         expire: 86400 // optional
